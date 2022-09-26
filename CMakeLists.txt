@@ -13,5 +13,5 @@ add_executable(leetproblems main.cpp
 		Problems/palindrome_linked_list.cxx
         Util/catch.hpp
         Util/ListNode.cxx
-        Util/ListNode.hxx 
-		)
+        Util/ListNode.hxx
+        Problems/odd_even_linked_list.cxx)
