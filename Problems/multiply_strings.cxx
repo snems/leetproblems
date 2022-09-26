@@ -151,7 +151,7 @@ namespace{
 }
 
 
-TEST_CASE("Test multiply strings", "[multiply-strings]")
+TEST_CASE("Test multiply strings", "[multiply-strings][43]")
 {
 	Solution s;
 	SECTION("Number")

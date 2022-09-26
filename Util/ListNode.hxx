@@ -23,7 +23,25 @@ struct ListNode
 	ListNode() : val(0), next(nullptr) {}
 	explicit ListNode(int x) : val(x), next(nullptr) {}
 	ListNode(int x, ListNode *next) : val(x), next(next) {}
+	friend std::ostream& operator<<(std::ostream& os, const ListNode& node);
+	bool operator==(const ListNode &other) const
+	{
+		ListNode a = *this;
+		ListNode b = other;
+		const ListNode *l = &a;
+		const ListNode *r = &b;
+		do
+		{
+			if (!(l && r)) return false;
+			if (l->val != r->val) return false;
+			r = r->next;
+			l = l->next;
+		}while(l || r);
+		return true;
+	}
 };
+
+
 
 class ListNodeCreator
 {
