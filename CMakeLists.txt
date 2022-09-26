@@ -10,6 +10,7 @@ add_executable(leetproblems main.cpp
         Problems/longest_common_prefix.cxx
 		Problems/multiply_strings.cxx
 		Problems/remove_nth_node_from_end_of_list.cxx
+		Problems/palindrome_linked_list.cxx
         Util/catch.hpp
         Util/ListNode.cxx
         Util/ListNode.hxx 
