@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.22)
 project(leetproblems)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -10,4 +10,5 @@ add_executable(leetproblems main.cpp
         Problems/longest_common_prefix.cxx
         Util/catch.hpp
         Util/ListNode.cxx
-        Util/ListNode.hxx Problems/multiply_strings.cxx)
+        Util/ListNode.hxx 
+		Problems/multiply_strings.cxx)
