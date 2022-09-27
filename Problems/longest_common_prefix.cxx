@@ -54,7 +54,7 @@ namespace
 	};
 }
 
-TEST_CASE("Longest common prefix", "[longest-common-prefix][14]")
+TEST_CASE("Test 14. Longest common prefix", "[longest-common-prefix][14]")
 {
 	Solution s;
 

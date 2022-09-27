@@ -65,7 +65,7 @@ namespace
 	};
 }
 
-TEST_CASE("Test remove Nth node from end of list", "[remove-nth-node-from-end-of-list][19]")
+TEST_CASE("Test 19. Remove Nth node from end of list", "[remove-nth-node-from-end-of-list][19]")
 {
 	ListNodeCreator creator;
 	Solution s;

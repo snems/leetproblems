@@ -82,7 +82,7 @@ namespace
 	};
 }
 
-TEST_CASE("Test Palindrome Linked List", "[palindrome_linked_list][234]")
+TEST_CASE("Test 234. Palindrome Linked List", "[palindrome_linked_list][234]")
 {
 	Solution s;
 	ListNodeCreator creator;

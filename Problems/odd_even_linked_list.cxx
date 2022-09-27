@@ -82,7 +82,7 @@ namespace
 }
 
 
-TEST_CASE("Test Odd Even Linked List", "[odd_even_linked_list][328]")
+TEST_CASE("Test 328. Odd Even Linked List", "[odd_even_linked_list][328]")
 {
 	ListNodeCreator creator;
 
