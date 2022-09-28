@@ -30,37 +30,43 @@
 #include "Util/TreeNode.hxx"
 #include "Util/catch.hpp"
 
-class Solution {
-	long long pathSumBase(TreeNode* root, long long targetSum)
+namespace
+{
+	class Solution
 	{
-		long long result = 0;
-		if (root)
+		long long pathSumBase(TreeNode *root, long long targetSum)
 		{
-			if (root->val == targetSum)
+			long long result = 0;
+			if (root)
 			{
-				++result;
+				if (root->val == targetSum)
+				{
+					++result;
+				}
+				long long new_target = targetSum - root->val;
+				result += pathSumBase(root->left, new_target);
+				result += pathSumBase(root->right, new_target);
+
 			}
-			long long new_target = targetSum - root->val;
-			result += pathSumBase(root->left, new_target);
-			result += pathSumBase(root->right, new_target);
-
+			return result;
 		}
-		return result;
-	}
-public:
-	int pathSum(TreeNode* root, int targetSum) {
-		long long result = 0;
 
-		if (root)
+	public:
+		int pathSum(TreeNode *root, int targetSum)
 		{
-			result += pathSumBase(root, targetSum);
-			result += pathSum(root->left, targetSum);
-			result += pathSum(root->right, targetSum);
-		}
+			long long result = 0;
 
-		return static_cast<int>(result);
-	}
-};
+			if (root)
+			{
+				result += pathSumBase(root, targetSum);
+				result += pathSum(root->left, targetSum);
+				result += pathSum(root->right, targetSum);
+			}
+
+			return static_cast<int>(result);
+		}
+	};
+}
 
 TEST_CASE("Test Path Sum III","[path_sum_iii][437]")
 {

@@ -93,8 +93,7 @@ public:
 				queue.push(&(*queue.front())->left);
 				queue.push(&(*queue.front())->right);
 			}
-			else
-			{
+			if (0){
 				queue.push(nullptr);
 				queue.push(nullptr);
 			}
