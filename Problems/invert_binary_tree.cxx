@@ -73,5 +73,4 @@ TEST_CASE("Test Invert Binary Tree","[invert_binary_tree][226]")
 		TreeNode *head = creator({});
 		CHECK(solution.invertTree(head) == nullptr);
 	}
-
 }
